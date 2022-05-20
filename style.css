@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    background-image: url("https://media.istockphoto.com/photos/texture-wood-picture-id953189720?k=20&m=953189720&s=612x612&w=0&h=yarf8VWGaFk3Vizyh6O_9odnpYdlPpBXpNcRSpuYZT8=");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #141E27;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    width: 100vw;
+    top:0px
+}
+
+.toolbox-priority-cont{
+    height: 3rem;
+    background-color: #EEEDDE;
+    width: 18rem;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2px;
+}
+
+.action-btn-cont{
+    background-color: #EEEDDE;
+    height: 3rem;
+    width: 10rem;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2px;
+}
+
+.color{
+    height: 1.5rem;
+    width: 3rem;
+}
+
+.pink{
+    background-color:rgb(255, 0, 157);
+    cursor: pointer;
+}
+
+.blue{
+    background-color:rgb(0, 89, 255);
+    cursor: pointer;
+}
+
+.green{
+    background-color:rgb(0, 255, 0);
+    cursor: pointer;
+}
+.orange{
+    background-color:rgb(255, 137, 2);
+    cursor: pointer;
+}
+
+.add-btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.remove-btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-cont{
+    position: absolute;
+    left: 25vw;
+    top:25vh;
+    background-color: #EEEDDE;
+    height: 50vh;
+    width: 50vw;
+    display: none;
+}
+
+.textarea-cont{
+    outline:none;
+    resize: none;
+    border: none;
+    background-color:#EEEDDE;
+    height: 100%;
+    width: 75%;
+    font-size: 2rem;
+    padding: 2rem;
+    border-right: 2px solid #141E27;
+}
+
+.priority-color-cont{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 5rem;
+}
+
+.active{
+    border: 6px solid #000000a2;
+}
+
+.main-cont{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin-bottom: 2rem;
+}
+
+.ticket-cont{
+    background-color: #EEEDDE;
+    height: 10rem;
+    width: 16rem;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 1.5rem;
+    background-color: #EEEDDE;
+    font-weight: 600;
+    font-size: .9rem;
+    color: #141E27;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.task-area{
+    height: 5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 1.25rem;
+    overflow: auto;
+    outline: none;
+    word-break: break-all;
+}
+
+.lock-unlock{
+    font-size: 1.5rem;
+    margin-left: 14.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
+}
